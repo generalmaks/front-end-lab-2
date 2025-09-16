@@ -1,0 +1,188 @@
+/* Завдання №1: Таблиця */
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Завдання №2: Зображення */
+tr:first-child td {
+    background-color: #078f8f;
+    color: #ffffff;
+}
+
+tr:nth-child(2) td {
+    background-color: #f5f507;
+    color: #000000;
+}
+
+tr:first-child:hover td {
+    background-color: #f5f507;
+    color: #000000;
+}
+
+tr:nth-child(2):hover td {
+    background-color: #078f8f;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+h1 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.clock {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #e8e8e8;
+    border-radius: 20px;
+    border: 2px solid #000;
+    position: relative;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot-12 {
+    top: 10px;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.dot-3 {
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.dot-6 {
+    bottom: 10px;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.dot-9 {
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.hand {
+    background-color: #000;
+    position: absolute;
+    transform-origin: bottom center;
+}
+
+.hour-hand {
+    width: 4px;
+    height: 60px;
+    top: 40px;
+    left: 50%;
+    margin-left: -2px;
+    transform: rotate(0deg);
+}
+
+.minute-hand {
+    width: 2px;
+    height: 80px;
+    top: 20px;
+    left: 50%;
+    margin-left: -1px;
+    transform: rotate(90deg);
+}
+
+.center-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+
+.dot-transform {
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-12-transform {
+    transform: translate(-50%, -50%) translateY(-88px);
+}
+
+.dot-3-transform {
+    transform: translate(-50%, -50%) translateX(88px);
+}
+
+.dot-6-transform {
+    transform: translate(-50%, -50%) translateY(88px);
+}
+
+.dot-9-transform {
+    transform: translate(-50%, -50%) translateX(-88px);
+}
+
+.hand-transform {
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.hour-hand-transform {
+    width: 4px;
+    height: 60px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.minute-hand-transform {
+    width: 2px;
+    height: 80px;
+    transform: translate(-50%, -100%) rotate(90deg);
+}
+
+.center-dot-transform {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
